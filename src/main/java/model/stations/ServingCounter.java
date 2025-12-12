@@ -1,4 +1,10 @@
 
+import controller.OrderManager;
+import controller.ScoreManager;
+import java.util.Timer;
+import java.util.TimerTask;
+import model.*;
+
 public class ServingCounter extends Station {
     private OrderManager orderManager;
     private ScoreManager scoreManager;

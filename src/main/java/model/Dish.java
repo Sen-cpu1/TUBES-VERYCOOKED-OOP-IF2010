@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.List;
+import model.*;
+
 public class Dish {
     private String name;
     private List<Preparable> components;

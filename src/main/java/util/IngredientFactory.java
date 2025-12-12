@@ -1,4 +1,7 @@
 // util/IngredientFactory.java (Factory Pattern)
+import model.Ingredients.Ingredient;
+import model.Ingredients.Pizza.*;
+
 public class IngredientFactory {
     private static IngredientFactory instance;
     

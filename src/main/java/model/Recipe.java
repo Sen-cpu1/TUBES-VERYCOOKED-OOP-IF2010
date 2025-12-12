@@ -1,3 +1,8 @@
+import enums.IngredientState;
+import java.util.HashMap;
+import java.util.Map;
+import model.Preparable;
+
 public class Recipe {
     private String name;
     private Map<String, IngredientState> requiredIngredients; // <IngredientName, State>

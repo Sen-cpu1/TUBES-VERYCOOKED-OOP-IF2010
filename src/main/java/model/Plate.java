@@ -1,3 +1,5 @@
+import model.KitchenUtensils;
+
 public class Plate extends KitchenUtensils {
     private boolean isDirty;
     

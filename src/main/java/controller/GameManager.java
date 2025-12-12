@@ -1,4 +1,9 @@
 // controller/GameManager.java (Singleton)
+import enums.GameState;
+import java.util.Timer;
+import java.util.TimerTask;
+import model.*;
+
 public class GameManager {
     private static GameManager instance;
     private GameState currentState;
@@ -89,4 +94,5 @@ public class GameManager {
     public OrderManager getOrderManager() { return orderManager; }
     public ScoreManager getScoreManager() { return scoreManager; }
     public int getRemainingTime() { return remainingTime; }
+    public GameState getCurrentState() { return currentState; }
 }

@@ -1,4 +1,7 @@
 
+import java.util.Stack;
+import model.Plate;
+
 public class PlateStorage extends Station {
     private Stack<Plate> plates; // Clean plates at bottom, dirty on top
     

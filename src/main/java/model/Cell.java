@@ -1,4 +1,6 @@
 
+import enums.CellType;
+
 public class Cell {
 
     private Position position;
@@ -14,7 +16,13 @@ public class Cell {
     public boolean isWalkable() {
         return type == CellType.WALKABLE;
     }
-    
-    // Getters/Setters
+
+    public Position getPosition() { return position; }
+    public CellType getType() { return type; }
+    public void setType(CellType type) { this.type = type; }
+    public Station getStation() { return station; }
+    public void setStation(Station station) { this.station = station; }
+    public Item getItemOnFloor() { return itemOnFloor; }
+    public void setItemOnFloor(Item itemOnFloor) { this.itemOnFloor = itemOnFloor; }
 }
 

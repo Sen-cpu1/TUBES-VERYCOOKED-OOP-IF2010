@@ -1,3 +1,6 @@
+import enums.IngredientState;
+import model.*;
+
 public class CookingStation extends Station {
     private Oven oven; // Fixed oven
     

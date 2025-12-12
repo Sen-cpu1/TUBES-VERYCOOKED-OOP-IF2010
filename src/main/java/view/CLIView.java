@@ -1,4 +1,9 @@
 // view/CLIView.java
+import controller.GameManager;
+import model.*;
+import enums.CellType;
+import java.util.List;
+
 public class CLIView {
     private GameManager gameManager;
     

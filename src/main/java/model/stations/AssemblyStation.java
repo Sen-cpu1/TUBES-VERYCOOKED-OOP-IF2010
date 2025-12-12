@@ -1,4 +1,8 @@
 
+import model.*;
+import model.Ingredients.Ingredient;
+import model.Ingredients.Pizza.*;
+
 public class AssemblyStation extends Station {
     public AssemblyStation(Position pos) {
         this.position = pos;

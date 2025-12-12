@@ -1,3 +1,5 @@
+import enums.IngredientState;
+
 public class Ayam extends Ingredient {
     public Ayam() {
         this.name = "Ayam";

@@ -1,4 +1,6 @@
 
+import model.*;
+
 public class TrashStation extends Station {
     public TrashStation(Position pos) {
         this.position = pos;

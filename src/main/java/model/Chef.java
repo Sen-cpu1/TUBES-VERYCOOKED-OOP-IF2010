@@ -1,3 +1,7 @@
+import enums.ChefAction;
+import enums.Direction;
+import java.util.Objects;
+
 // model/Chef.java
 public class Chef {
     private String id;
@@ -80,6 +84,7 @@ public class Chef {
     public void setCurrentAction(ChefAction action) { this.currentAction = action; }
     public Position getPosition() { return position; }
     public Direction getDirection() { return direction; }
-    public booleanis Active() { return isActive; }
+    public boolean isActive() { return isActive; }
     public void setActive(boolean active) { this.isActive = active; }
+    public String getName() { return name; }
 }

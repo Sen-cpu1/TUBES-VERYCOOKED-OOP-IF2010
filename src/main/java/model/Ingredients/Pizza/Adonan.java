@@ -1,3 +1,5 @@
+import enums.IngredientState;
+
 public class Adonan extends Ingredient {
     public Adonan() {
         this.name = "Adonan";

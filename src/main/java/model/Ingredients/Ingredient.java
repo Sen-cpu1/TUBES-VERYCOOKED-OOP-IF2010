@@ -1,3 +1,5 @@
+import enums.IngredientState;
+
 public abstract class Ingredient extends Item implements Preparable {
     protected IngredientState state;
     protected int choppingProgress; // 0-100
@@ -15,4 +17,15 @@ public abstract class Ingredient extends Item implements Preparable {
         state = IngredientState.COOKING;
         // Timer akan handle transisi ke COOKED/BURNED
     }
+
+    @Override
+    public IngredientState getState() { return state; }
+
+    public void setState(IngredientState state) { this.state = state; }
+
+    @Override
+    public String getName() { return name; }
+
+    @Override
+    public boolean isEdible() { return state == IngredientState.COOKED; }
 }

@@ -1,3 +1,6 @@
+import model.Ingredients.Ingredient;
+import model.Ingredients.Pizza.*;
+import util.IngredientFactory;
 
 public class IngredientStorage extends Station {
     private String ingredientType; // "Adonan", "Tomat", etc.

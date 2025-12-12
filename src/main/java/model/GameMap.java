@@ -1,4 +1,8 @@
 
+import enums.CellType;
+import java.util.ArrayList;
+import java.util.List;
+import model.stations.*;
 
 public class GameMap {
     private static final int WIDTH = 14;
@@ -118,6 +122,26 @@ public class GameMap {
             }
         }
         return false;
+    }
+
+    public void addChef(Chef chef) {
+        chefs.add(chef);
+    }
+
+    public Cell getCell(Position pos) {
+        return grid[pos.getY()][pos.getX()];
+    }
+
+    public Item getItemAt(Position pos) {
+        return grid[pos.getY()][pos.getX()].getItemOnFloor();
+    }
+
+    public void placeItemAt(Position pos, Item item) {
+        grid[pos.getY()][pos.getX()].setItemOnFloor(item);
+    }
+
+    public void removeItemAt(Position pos) {
+        grid[pos.getY()][pos.getX()].setItemOnFloor(null);
     }
     
     // Other helper methods...

@@ -1,3 +1,7 @@
+import enums.IngredientState;
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class Oven extends KitchenUtensils implements CookingDevice {
     private Position ovenPosition; // Fixed position
     private boolean isCooking;
@@ -14,7 +18,14 @@ public class Oven extends KitchenUtensils implements CookingDevice {
         // Hanya terima ingredient yang sudah CHOPPED
         return ingredient.getState() == IngredientState.CHOPPED;
     }
-    
+
+    @Override
+    public void addIngredient(Preparable ingredient) {
+        if (canAccept(ingredient) && contents.size() < capacity()) {
+            contents.add(ingredient);
+        }
+    }
+
     @Override
     public void startCooking() {
         if (!contents.isEmpty() && !isCooking) {
@@ -55,5 +66,10 @@ public class Oven extends KitchenUtensils implements CookingDevice {
         }
         isCooking = false;
         // Log or notify
+    }
+
+    @Override
+    public java.util.Set<Preparable> getContents() {
+        return contents;
     }
 }
