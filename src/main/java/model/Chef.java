@@ -80,6 +80,6 @@ public class Chef {
     public void setCurrentAction(ChefAction action) { this.currentAction = action; }
     public Position getPosition() { return position; }
     public Direction getDirection() { return direction; }
-    public booleanisActive() { return isActive; }
+    public booleanis Active() { return isActive; }
     public void setActive(boolean active) { this.isActive = active; }
 }
