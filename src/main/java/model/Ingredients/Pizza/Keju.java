@@ -1,6 +1,6 @@
 public class Keju extends Ingredient {
-    public Adonan() {
-        this.name = "Adonan";
+    public Keju() {
+        this.name = "Keju";
         this.state = IngredientState.RAW;
     }
     

@@ -1,6 +1,6 @@
 public class Ayam extends Ingredient {
-    public Adonan() {
-        this.name = "Adonan";
+    public Ayam() {
+        this.name = "Ayam";
         this.state = IngredientState.RAW;
     }
     

@@ -1,6 +1,6 @@
 public class Sosis extends Ingredient {
-    public Adonan() {
-        this.name = "Adonan";
+    public Sosis() {
+        this.name = "Sosis";
         this.state = IngredientState.RAW;
     }
     
