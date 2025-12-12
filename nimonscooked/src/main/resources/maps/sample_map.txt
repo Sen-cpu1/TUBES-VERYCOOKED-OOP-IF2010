@@ -1,0 +1,19 @@
+# Sample Map Configuration
+# This is an example map file for the game
+# Format: Each line represents a row, each character represents a tile
+
+# Legend:
+# # = Wall
+# . = Floor
+# S = Station
+# P = Player spawn point
+
+##########
+#........#
+#.S....S.#
+#........#
+#...P....#
+#........#
+#.S....S.#
+#........#
+##########
